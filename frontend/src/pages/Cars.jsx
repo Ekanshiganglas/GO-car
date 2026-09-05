@@ -57,10 +57,13 @@ export default function Cars() {
             <h1 style={{ fontSize: '30px', fontWeight: 800, color: '#fff' }}>Browse Cars</h1>
             <p style={{ color: '#64748b', marginTop: '4px' }}>{total} cars available</p>
           </div>
-          <button onClick={() => setShowFilters(!showFilters)} className="btn-secondary"
-            style={{ display: 'none' }} className="btn-secondary md-hidden-toggle">
-            <SlidersHorizontal style={{ width: '18px', height: '18px' }} /> Filters
-          </button>
+         <button
+          onClick={() => setShowFilters(!showFilters)}
+          style={{ display: 'none' }}
+          className="btn-secondary md-hidden-toggle"
+        >
+          <SlidersHorizontal style={{ width: '18px', height: '18px' }} /> Filters
+        </button>
         </div>
 
         <div style={{ display: 'flex', gap: '32px' }}>
